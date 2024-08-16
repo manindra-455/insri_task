@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">BLOG DASHBOARD</div>
+        <nav class="nav-menu">
+            <a href="index.html">
+                <img src="image/back2.png" alt="Back to Site" class="back-icon">
+            </a>
+        </nav>
+    </header>
+    
+    <main class="dashboard">
+        <section class="form-section">
+            <h2>CREATE NEW BLOG POST</h2>
+            <form id="create-form">
+                <input type="text" id="title" placeholder="Blog Title" required>
+                <textarea id="content" placeholder="Blog Content" rows="10" required></textarea>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Create Post</button>
+            </form>
+        </section>
+        
+        <section class="posts">
+            <h2>Manage Posts</h2>
+            <div id="post-list">
+                <p class="no-posts-message">There is no blog to manage. Please create a new blog first.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
